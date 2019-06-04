@@ -4,6 +4,4 @@ entity-service:
   minimum: 9
   user: user-default
   pass: pass-default
-
----
-url: 'https://oracle-default.com'
+  url: 'https://oracle-default.com'

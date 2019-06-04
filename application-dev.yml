@@ -4,6 +4,4 @@ entity-service:
   minimum: 9
   user: USRTRTT
   pass: default
-
----
-url: 'https://oracle-default-dev.com'
+  url: 'https://oracle-default-dev.com'
