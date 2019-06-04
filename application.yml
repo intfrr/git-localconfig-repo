@@ -1,7 +1,9 @@
 --- 
-limits-service: 
+entity-service: 
   maximum: 999
   minimum: 9
+  user: user-default
+  pass: pass-default
 
 ---
-url: 'https://gitlab.com'
+url: 'https://oracle-default.com'

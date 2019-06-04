@@ -1,0 +1,6 @@
+--- 
+entity-service: 
+  maximum: 999
+  minimum: 9
+  user: entity-user-dev
+  pass: entity-pass-dev

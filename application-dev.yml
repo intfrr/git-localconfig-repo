@@ -1,0 +1,9 @@
+--- 
+entity-service: 
+  maximum: 999
+  minimum: 9
+  user: USRTRTT
+  pass: default
+
+---
+url: 'https://oracle-default-dev.com'
