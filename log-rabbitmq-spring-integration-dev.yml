@@ -1,0 +1,48 @@
+spring:
+  # application:
+  #   name: log-rabbitmq-spring-integration
+  # cloud:
+  #   config:
+  #     failFast: true
+  #     retry:
+  #       initialInterval: 6000
+  #       multiplier: 1.5
+  #       maxInterval: 30000
+  #     enabled: true
+  #     uri: http://localhost:8888/
+  #     label: development
+  #     name: ${spring.application.name}
+  #     profile: dev   
+  #     allow-override: true
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    # HikariCP settings
+    # spring.datasource.hikari.*
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 5
+    password: CRM_RTCORE_DEV2019
+#    url: jdbc:oracle:thin:@//localhost:1521/XE
+    url: jdbc:oracle:thin:@//localhost:1521/XE
+    username: CRM_RTCORE_DEV
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    properties:
+      hibernate:
+        show_sql: true
+    show-sql: true
+logging: 
+  level: 
+    org: 
+      hibernate: 
+        SQL: debug
+        type: 
+          descriptor: 
+            sql: trace
+      org: 
+        springframework: 
+          amqp: 
+            rabbit: 
+              listener: warn
+  pattern: 
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
