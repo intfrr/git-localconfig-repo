@@ -1,4 +1,4 @@
-spring:
+# spring:
   # application:
   #   name: log-rabbitmq-spring-integration
   # cloud:
@@ -14,17 +14,17 @@ spring:
   #     name: ${spring.application.name}
   #     profile: dev   
   #     allow-override: true
-  datasource:
+  # datasource:
     # driver-class-name: oracle.jdbc.driver.OracleDriver
     # # HikariCP settings
     # # spring.datasource.hikari.*
     # hikari:
     #   connection-timeout: 60000
     #   maximum-pool-size: 5
-    password: CRM_RTCORE_DEV2019
-#    url: jdbc:oracle:thin:@//localhost:1521/XE
-    # url: jdbc:oracle:thin:@//localhost:1521/XE
-    username: CRM_RTCORE_DEV
+#     password: CRM_RTCORE_DEV2019
+# #    url: jdbc:oracle:thin:@//localhost:1521/XE
+#     # url: jdbc:oracle:thin:@//localhost:1521/XE
+#     username: CRM_RTCORE_DEV
   # jpa:
   #   database-platform: org.hibernate.dialect.Oracle12cDialect
   #   properties:
