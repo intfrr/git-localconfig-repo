@@ -40,3 +40,13 @@ logging:
               listener: warn
   pattern: 
     console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
+rt:
+  log-rabbitmq-spring-integration:
+  config:
+    rabbitmq:
+      exchange: log_topic
+      binding-key: 'rtcore.#.*'
+      queue: rtcore.logs.queue
+      username: guest
+      password: guest
+      hostname: localhost
