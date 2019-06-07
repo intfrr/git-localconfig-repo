@@ -5,3 +5,33 @@ entity-service:
   user: user-dev
   pass: user-dev
   url: 'https://oracle-default-dev.com'
+
+---
+spring:
+  datasource:
+    # HikariCP settings
+    # spring.datasource.hikari.*
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 5
+#    url: jdbc:oracle:thin:@//localhost:1521/XE
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+    show-sql: true
+logging: 
+  level: 
+    org: 
+      hibernate: 
+        SQL: debug
+        type: 
+          descriptor: 
+            sql: trace
+      org: 
+        springframework: 
+          amqp: 
+            rabbit: 
+              listener: warn
+  pattern: 
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
