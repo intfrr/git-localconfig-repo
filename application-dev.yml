@@ -49,4 +49,5 @@ rt:
         queue: rtcore.logs.queue
         username: guest
         password: guest
-        hostname: localhost
+        host: localhost
+        message-listener: com.santander.crm.rtcore.logcollector.service.LogCollectorMessageListenerService
