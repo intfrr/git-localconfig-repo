@@ -25,6 +25,15 @@ spring:
       hibernate:
         show_sql: true
     show-sql: true
+  mvc:
+    favicon:
+      enabled: false
+  redis:
+    host: localhost
+    password: SuperSecretRedisPassword
+    port: 6379
+  session:
+    store-type: redis
 logging: 
   level: 
     org: 
